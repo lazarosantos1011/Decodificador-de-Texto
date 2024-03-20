@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+    <main class="conteudo">
+        <img class="logo-alura" src="assets/Vector.png" alt="logo alura">
+        <section class="conteudo__secao__input">
+            <div class="conteudo__secao__input__search">
+                <input type="text" maxlength="800" placeholder="Digite seu texto">
+            </div>
+            <div class="conteudo__secao__input__botoes">
+                <button onclick="criptografar()" class="conteudo__secao__botoes__botao__criptografar"><img src="assets/botao-crip.PNG" alt="Botão de criptografar"></button>
+                <button onclick="descriptografar()" class="conteudo__secao__botoes__botao__descriptografar"><img src="assets/botao-descrip.PNG" alt="Botão de descriptografar"></button>
+            </div>
+        </section>
+        <section class="conteudo__secao__resultado">
+            <div class="conteudo__secao__resultado__area-campo">
+                <p class="conteudo__secao__resultado__campo" id="campo-resultado"></p>
+            </div>
+            <div class="conteudo__secao__resultado__area-copia">
+                <div class="conteudo__secao__resultado__area-mensagem-copia">
+                    <p id="status-copia"></p>
+                </div>
+                <button onclick="copiar()" class="conteudo__secao__resultado__botao__botao">
+                    <img id="imgff" src="assets/btn-cp.PNG" alt="Botão de copiar">
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="src/app.js"></script>
+</body>
+</html>
